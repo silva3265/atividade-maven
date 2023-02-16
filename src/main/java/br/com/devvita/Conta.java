@@ -74,7 +74,7 @@ public class Conta implements Banco {
 	/* Metodo Tranferir */
 	public void transferir(Conta outraConta, double valor) {
 		if (valor <= saldo) {
-			this.sacar(valor);
+			sacar(valor);
 			outraConta.depositar(valor);
 		}
 	}
